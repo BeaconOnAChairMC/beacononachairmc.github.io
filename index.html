@@ -12,7 +12,7 @@ $(document).ready(function(){
     $(document).scroll(function() {
         var alpha = Math.min(2 * $(this).scrollTop() / 210, 1);
         var opacity1 = ($(this).scrollTop()-300) / 250
-        var opacity2 = ($(this).scrollTop()-200) / 200
+        var opacity2 = ($(this).scrollTop()-150) / 200
         var channel = Math.round(255-(alpha * 255));
         $("body").css('background-color', 'rgb(' + channel + ',' + channel + ',' + channel + ')');
         $("#blackjack").css('background-color', 'rgb(' + channel + ',' + channel + ',' + channel + ')');
