@@ -17,6 +17,7 @@ body {
   perspective: 1000px;
   vertical-align: center;
   margin:auto;
+  opacity:0;
 }
 
 .flip-card-inner {
