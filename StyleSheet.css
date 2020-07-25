@@ -161,7 +161,6 @@ body {
 
 [class*="col-"] {
   float: left;
-  outline: 1px solid red;
 }
 
 ::after {
@@ -243,7 +242,6 @@ body {
 
 .container {
   justify-content: center;
-  outline: red solid 1px;
 
 }
 
