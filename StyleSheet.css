@@ -5,14 +5,14 @@
 body {
     background-color: #FFFFFF;
     padding:0px;
-    margin:0px;
-    height:2000px;
+    margin:2vw;
+    height:5000px;
 }
 
 
 .flip-card {
   background-color: transparent;
-  width: 50%;
+  width: 60%;
   height: 29.162vw;
   perspective: 1000px;
   vertical-align: center;
@@ -80,13 +80,13 @@ body {
   top:100%;
   height:100%;
   width:100%;
-  background-color: white;
+  background-color:  	#202020;
   color:white;
 }
 
 #blackjackinfo{
   height:auto;
-  background-color: black;
+  background-color:  	#202020;
   font-size:20px;
   color:white;
   font-family:"source code pro";
@@ -97,7 +97,7 @@ body {
   font-family: "Inconsolata";
   font-size:50px;
   color:white;
-  opacity:0;
+  opacity:1;
 }
 
 #card{
@@ -122,7 +122,7 @@ body {
 
 #cardback{
   background-image:url(https://deck.of.cards/img/standard-deck/back.png);
-  background-size:cover;
+  background-position: center;
   width: 100%;
   height: 29.162vw;
 }
@@ -164,8 +164,116 @@ body {
   outline: 1px solid red;
 }
 
-.row::after {
+::after {
   content: "";
   clear: both;
   display: table;
+}
+
+
+
+
+
+
+#socialmedia{
+  width:5em;
+  height:5em;
+  background-color:white;
+}
+
+
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+ .social-container {
+	 width: 100%;
+   margin:auto;
+   margin-top:3em;
+	 text-align: center;
+}
+ .social-icons {
+	 padding: 0;
+	 list-style: none;
+	 margin: 1em;
+}
+ .social-icons li {
+	 display: inline-block;
+	 margin: 0.15em;
+	 position: relative;
+	 font-size: 1.2em;
+}
+ .social-icons i {
+	 color: #fff;
+	 position: absolute;
+	 top: 21px;
+	 left: 21px;
+	 transition: all 265ms ease-out;
+}
+ .social-icons a {
+	 display: inline-block;
+}
+ .social-icons a:before {
+	 transform: scale(1);
+	 -ms-transform: scale(1);
+	 -webkit-transform: scale(1);
+	 content: " ";
+	 width: 60px;
+	 height: 60px;
+	 border-radius: 100%;
+	 display: block;
+	 background: linear-gradient(45deg, black, black);
+	 transition: all 265ms ease-out;
+}
+ .social-icons a:hover:before {
+	 transform: scale(0);
+	 transition: all 265ms ease-in;
+}
+ .social-icons a:hover i {
+	 transform: scale(2.2);
+	 -ms-transform: scale(2.2);
+	 -webkit-transform: scale(2.2);
+	 color: #ffffff;
+	 background: -webkit-linear-gradient(45deg, #ffffff, #ffffff);
+	 -webkit-background-clip: text;
+	 -webkit-text-fill-color: transparent;
+	 transition: all 265ms ease-in;
+}
+
+
+
+
+.container {
+  justify-content: center;
+  outline: red solid 1px;
+
+}
+
+.chip {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  border: 7px dashed white;
+  transition: all 1s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+  margin: 0px 8px;
+  background-color:#303030;
+
+}
+
+div span {
+  border: 3px dashed white;
+  font-size:30px;
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 160px;
+}
+
+/* .spin */ .container div:hover {
+  transform: rotate(360deg);
 }
