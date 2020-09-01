@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+body {
+    background-color: #FFFFFF;
+
+    margin:0px;
+    height:5000px;
+}
+
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+
+
+[class*="col-"] {
+  float: left;
+
+}
+
+::after {
+  content: "";
+  clear: both;
+}
+
+
+#backgroundblack{
+  position:fixed;
+  width:100%;
+  height:100%;
+}
+
+
+#powerplantbg{
+  background-image: url(tides.jpg);
+  background-size:cover;
+  position:fixed;
+  height:100%;
+  width:100%;
+  filter: brightness(50%);
+
+}
+
+#picture{
+
+}
+
+#picture1{
+  background-image: url(tide1.gif);
+  background-size: cover;
+  background-position:center;
+  width:60vw;
+  height:35vw;
+  margin:auto
+
+}
+
+#titlelol{
+
+}
+
+#information{
+
+}
+
+#infotext{
+  font-family:'Inconsolata';
+  color: white;
+  position:relative;
+  text-align: center;
+  width:50%;
+  margin:auto;
+
+}
+
+#infotext2{
+  font-family:'Inconsolata';
+  color: white;
+  position:relative;
+  text-align: center;
+
+
+}
+
+.fadeImage {
+    -webkit-animation: fadeout 4s; /* Safari, Chrome and Opera > 12.1 */
+    display: block;
+}
+
+@keyframes fadeout {
+    from { opacity: 1; }
+    to   { opacity: 0; }
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.button3 {
+  background-color: white;
+  color: black;
+  border: 2px solid #f44336;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
