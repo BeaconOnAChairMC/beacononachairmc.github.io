@@ -33,6 +33,7 @@ body {
 
 [class*="col-"] {
   float: left;
+  outline:1px solid red;
 
 }
 
